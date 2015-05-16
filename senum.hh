@@ -1,5 +1,5 @@
-#ifndef enum_str_hh
-#define enum_str_hh
+#ifndef senum_hh
+#define senum_hh
 
 #include <iostream>
 #include <string>
@@ -16,7 +16,7 @@
 #define ENUM_STR_STR_CASE(r, enum_name, elem) \
   if (!str.compare( BOOST_PP_STRINGIZE(elem) )) return elem; else
 
-#define enum_str(enum_name, values) \
+#define senum(enum_name, values) \
   struct enum_name { \
     enum type { BOOST_PP_SEQ_ENUM(values) }; \
     static type get_enum(const std::string& str) { \

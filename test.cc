@@ -1,6 +1,6 @@
-#include "enum_str.hh"
+#include "senum.hh"
 
-enum_str(numbers,(one)(two)(three))
+senum(numbers,(one)(two)(three))
 
 int main(int argc, char **argv)
 {

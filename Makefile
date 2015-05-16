@@ -10,7 +10,7 @@ $(EXE): %: %.cc
 	@echo Compiling $@
 	@g++ $(CFLAGS) $^ -o $@
 	
-test: enum_str.hh
+test: senum.hh
 
 clean:
 	@rm -fv $(EXE)
