@@ -2,6 +2,7 @@
 
 senum(numbers,(one)(two)(three))
 
+#ifndef senum_pp_test
 int main(int argc, char **argv)
 {
   std::cout << numbers::get_str(numbers::one)   << ' ';
@@ -18,3 +19,4 @@ int main(int argc, char **argv)
 
   return 0;
 }
+#endif
